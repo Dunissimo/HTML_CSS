@@ -489,6 +489,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.4;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mb-28 {
   margin-bottom: 7rem;
 }
@@ -501,8 +516,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .hidden {
@@ -511,6 +542,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -523,6 +558,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -546,6 +589,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(53 50 50 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#121212\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -555,8 +603,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(200 154 252 / 0));
 }
 
+.from-\[\#DF5950\] {
+  --tw-gradient-from: #DF5950;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(223 89 80 / 0));
+}
+
 .to-\[\#7C6AFA\] {
   --tw-gradient-to: #7C6AFA;
+}
+
+.to-\[\#451046\] {
+  --tw-gradient-to: #451046;
 }
 
 .px-2 {
@@ -584,8 +641,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 100px;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-\[200px\] {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pr-\[30px\] {
+  padding-right: 30px;
+}
+
+.pr-\[15px\] {
+  padding-right: 15px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -604,6 +688,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -627,7 +716,7 @@ header {
 }
 
 main {
-  background-image: url("./img/tin.png");
+  background-image: url("./img/tin.jpg");
 }
 
 .progress-bar > progress {
@@ -674,8 +763,17 @@ main {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(176 135 223 / 0));
 }
 
+.hover\:from-\[\#bb453c\]:hover {
+  --tw-gradient-from: #bb453c;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(187 69 60 / 0));
+}
+
 .hover\:to-\[\#705fe4\]:hover {
   --tw-gradient-to: #705fe4;
+}
+
+.hover\:to-\[\#451046e0\]:hover {
+  --tw-gradient-to: #451046e0;
 }
 
 @media (min-width: 768px) {
@@ -685,6 +783,14 @@ main {
 
   .md\:w-\[85\%\] {
     width: 85%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:items-center {
@@ -711,12 +817,37 @@ main {
 }
 
 @media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:h-\[130px\] {
+    height: 130px;
+  }
+
   .lg\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .xl\:w-\[440px\] {
+    width: 440px;
+  }
+
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
