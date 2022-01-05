@@ -2,9 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .wrapper {
+    @apply max-w-full mx-auto md:max-w-[90%] lg:max-w-[80%] xl:max-w-[70%] 2xl:max-w-[60%];
+  }
+  .wrapper-sm {
+    @apply max-w-full mx-auto;
+  }
+
+  .li-style {
+    @apply mr-4 hover:underline hover:opacity-40;
+  }
+
+  .my-transition {
+    @apply transition delay-[0] ease-in duration-300;
+  }
+
+  .header__item {
+    @apply text-center py-4 flex flex-col w-[20%] h-[100%] bg-[#121212];
+  }
+
+  .start__item {
+    @apply flex flex-col justify-center;
+  }
+
+  .opacity {
+    @apply opacity-40;
+  }
+}
+
 header {
   background-image: url("./img/main-screen.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main {
   background-image: url("./img/tin.png");
+}
+
+.progress-bar > progress {
+  height: 6px;
+  position: relative;
+}
+.progress-bar > progress::before {
+  content: "0";
+  display: block;
+  opacity: 0.4;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.progress-bar > progress::after {
+  content: "1000000";
+  display: block;
+  opacity: 0.4;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.progress-bar > progress::-webkit-progress-bar {
+  background-color: #fff;
+}
+.progress-bar > progress::-webkit-progress-value {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}
+
+.block {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
 }
